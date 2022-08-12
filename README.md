@@ -33,4 +33,3 @@ Esse jogo é APENAS um teste de uso da limitada biblioteca graphics.py, os sprit
 
 
 Uso de sons e personagens não licenciados cobertos pela Lei Brasileira nº 9.610 de 19 de Fevereiro de 1998 Não constitui ofensa aos direitos autorais : trecho VI "a representação teatral e a execução musical, quando realizadas no recesso familiar ou, para fins exclusivamente didáticos, nos estabelecimentos de ensino, não havendo em qualquer caso intuito de lucro".
-# Fruit-Rain
