@@ -77,7 +77,7 @@ cls
 echo ==================================
 echo *      Jogo Iniciado             *
 echo ==================================
-python .\Main.py
+python3.8 .\Main.py
 pause
 goto menu
 
