@@ -11,9 +11,9 @@ print("=CODE STARED")
 def help():
     print("=HELP OPEN")
     helpwin = GraphWin(title="Help", width=1000, height=600, autoflush=True)
-    BackgoundH = Image(Point(500, 300), "ajuda_bmp.png")
-    BackgoundH2 = Image(Point(500, 300), "ajuda_bmp2.png")
-    BackgoundH3 = Image(Point(500, 300), "ajuda_bmp3.png")
+    BackgoundH = Image(Point(500, 300), "src/ajuda_bmp.png")
+    BackgoundH2 = Image(Point(500, 300), "src/ajuda_bmp2.png")
+    BackgoundH3 = Image(Point(500, 300), "src/ajuda_bmp3.png")
     key1 = None
     posj = 3
     while key1 != "Escape":
@@ -57,21 +57,21 @@ def main(sef, sem, reset):
 def gameback(win):
     global hp_heat1, hp_heat2, hp_heat3, hp_heat4
     #----------------------Back Image---------------------------------------#
-    gameback = Image(Point(500, 300), "bitmap.png")
+    gameback = Image(Point(500, 300), "src/bitmap.png")
     gameback.draw(win)
     #----------------------Life Bar-----------------------------------------#
-    hp_status = Image(Point(30, 20), "bitmap1.png")
+    hp_status = Image(Point(30, 20), "src/bitmap1.png")
     hp_status.draw(win)
-    hp_heat1 = Image(Point(70, 20), "bitmap3.png")
-    hp_heat2 = Image(Point(100, 20), "bitmap3.png")
-    hp_heat3 = Image(Point(130, 20), "bitmap3.png")
-    hp_heat4 = Image(Point(160, 20), "bitmap3.png")
+    hp_heat1 = Image(Point(70, 20), "src/bitmap3.png")
+    hp_heat2 = Image(Point(100, 20), "src/bitmap3.png")
+    hp_heat3 = Image(Point(130, 20), "src/bitmap3.png")
+    hp_heat4 = Image(Point(160, 20), "src/bitmap3.png")
     hp_heat1.draw(win)
     hp_heat2.draw(win)
     hp_heat3.draw(win)
     hp_heat4.draw(win)
     #----------------------Score--------------------------------------------#
-    score_status = Image(Point(950, 20), "bitmap4.png")
+    score_status = Image(Point(950, 20), "src/bitmap4.png")
     score_status.draw(win)
     score_data = Text(Point(880, 20), "0")
     score_data.setSize(20)
@@ -95,37 +95,37 @@ def interact(win, score_data, sef, sem):
     v2 = 0
     score = 0
     #----------------------Audio Data---------------------------------------#
-    wave_object0 = sa.WaveObject.from_wave_file('audio.wav')
-    wave_object = sa.WaveObject.from_wave_file('audio2.wav')
-    wave_object2 = sa.WaveObject.from_wave_file('audio3.wav')
-    wave_object3 = sa.WaveObject.from_wave_file('audio4.wav')
-    wave_object4 = sa.WaveObject.from_wave_file('audio5.wav')
-    wave_object5 = sa.WaveObject.from_wave_file('audio6.wav')
-    wave_object7 = sa.WaveObject.from_wave_file('audio7.wav')
-    wave_object8 = sa.WaveObject.from_wave_file('audio8.wav')
-    wave_object9 = sa.WaveObject.from_wave_file('audio9.wav')
-    wave_object10 = sa.WaveObject.from_wave_file('audio10.wav')
-    wave_object11 = sa.WaveObject.from_wave_file('audio11.wav')
-    wave_object12 = sa.WaveObject.from_wave_file('audio12.wav')
-    wave_object13 = sa.WaveObject.from_wave_file('audio13.wav')
+    wave_object0 = sa.WaveObject.from_wave_file('src/audio.wav')
+    wave_object = sa.WaveObject.from_wave_file('src/audio2.wav')
+    wave_object2 = sa.WaveObject.from_wave_file('src/audio3.wav')
+    wave_object3 = sa.WaveObject.from_wave_file('src/audio4.wav')
+    wave_object4 = sa.WaveObject.from_wave_file('src/audio5.wav')
+    wave_object5 = sa.WaveObject.from_wave_file('src/audio6.wav')
+    wave_object7 = sa.WaveObject.from_wave_file('src/audio7.wav')
+    wave_object8 = sa.WaveObject.from_wave_file('src/audio8.wav')
+    wave_object9 = sa.WaveObject.from_wave_file('src/audio9.wav')
+    wave_object10 = sa.WaveObject.from_wave_file('src/audio10.wav')
+    wave_object11 = sa.WaveObject.from_wave_file('src/audio11.wav')
+    wave_object12 = sa.WaveObject.from_wave_file('src/audio12.wav')
+    wave_object13 = sa.WaveObject.from_wave_file('src/audio13.wav')
     #----------------------Image Data----------------------------------------#
     # <- FALSE == left TURE == right (Referente a direção do personagem)
     pos = False
-    gameover = Image(Point(500, 300), "bitmap7.png")
-    gamepause = Image(Point(500, 300), "bitmap8.png")
-    fruit1 = Image(Point(0, 701), "fruit1.png")
-    fruit2 = Image(Point(0, 701), "fruit2.png")
-    fruit3 = Image(Point(0, 701), "fruit3.png")
-    fruit4 = Image(Point(0, 701), "fruit4.png")
-    fruit5 = Image(Point(0, 701), "fruit5.png")
-    fruit6 = Image(Point(0, 701), "fruit6.png")
-    fruit7 = Image(Point(0, 701), "fruit7.png")
-    fruit8 = Image(Point(0, 701), "fruit8.png")
-    fruit9 = Image(Point(0, 701), "fruit9.png")
-    fruit10 = Image(Point(0, 701), "fruit10.png")
-    fruit11 = Image(Point(0, 701), "fruit11.png")
+    gameover = Image(Point(500, 300), "src/bitmap7.png")
+    gamepause = Image(Point(500, 300), "src/bitmap8.png")
+    fruit1 = Image(Point(0, 701), "src/fruit1.png")
+    fruit2 = Image(Point(0, 701), "src/fruit2.png")
+    fruit3 = Image(Point(0, 701), "src/fruit3.png")
+    fruit4 = Image(Point(0, 701), "src/fruit4.png")
+    fruit5 = Image(Point(0, 701), "src/fruit5.png")
+    fruit6 = Image(Point(0, 701), "src/fruit6.png")
+    fruit7 = Image(Point(0, 701), "src/fruit7.png")
+    fruit8 = Image(Point(0, 701), "src/fruit8.png")
+    fruit9 = Image(Point(0, 701), "src/fruit9.png")
+    fruit10 = Image(Point(0, 701), "src/fruit10.png")
+    fruit11 = Image(Point(0, 701), "src/fruit11.png")
     objc1_pxy = Point(500, 488)
-    objc1 = Image(objc1_pxy, "char1-2.png")
+    objc1 = Image(objc1_pxy, "src/char1-2.png")
     objc1.draw(win)
     #----------------------Other----------------------------------------------#
     score_data.setText(score)
@@ -149,67 +149,67 @@ def interact(win, score_data, sef, sem):
             if freq1 == 0 and (fruit1.getAnchor()).getY() > 555:
                 fruit1.undraw()
                 fruit1 = Image(Point(((random.randrange(
-                    0, 1000)+random.randrange(0, 1000))/2), -(random.randrange(10, 100))), "fruit1.png")
+                    0, 1000)+random.randrange(0, 1000))/2), -(random.randrange(10, 100))), "src/fruit1.png")
                 fruit1.draw(win)
                 draw = True
             if freq1 == 1 and (fruit2.getAnchor()).getY() > 555:
                 fruit2.undraw()
                 fruit2 = Image(Point(((random.randrange(
-                    0, 1000)+random.randrange(0, 1000))/2), -(random.randrange(25, 100))), "fruit2.png")
+                    0, 1000)+random.randrange(0, 1000))/2), -(random.randrange(25, 100))), "src/fruit2.png")
                 fruit2.draw(win)
                 draw = True
             if freq1 == 2 and (fruit3.getAnchor()).getY() > 555:
                 fruit3.undraw()
                 fruit3 = Image(Point(((random.randrange(
-                    0, 1000)+random.randrange(0, 1000))/2), -(random.randrange(20, 100))), "fruit3.png")
+                    0, 1000)+random.randrange(0, 1000))/2), -(random.randrange(20, 100))), "src/fruit3.png")
                 fruit3.draw(win)
                 draw = True
             if freq1 == 3 and (fruit4.getAnchor()).getY() > 555:
                 fruit4.undraw()
                 fruit4 = Image(Point(((random.randrange(
-                    0, 1000)+random.randrange(0, 1000))/2), -(random.randrange(30, 800))), "fruit4.png")
+                    0, 1000)+random.randrange(0, 1000))/2), -(random.randrange(30, 800))), "src/fruit4.png")
                 fruit4.draw(win)
                 draw = True
             if freq1 == 4 and (fruit5.getAnchor()).getY() > 555:
                 fruit5.undraw()
                 fruit5 = Image(Point(((random.randrange(
-                    0, 1000)+random.randrange(0, 1000))/2), -(random.randrange(40, 300))), "fruit5.png")
+                    0, 1000)+random.randrange(0, 1000))/2), -(random.randrange(40, 300))), "src/fruit5.png")
                 fruit5.draw(win)
                 draw = True
             if freq1 == 5 and (fruit6.getAnchor()).getY() > 555:
                 fruit6.undraw()
                 fruit6 = Image(Point(((random.randrange(
-                    0, 1000)+random.randrange(0, 1000))/2), -(random.randrange(100, 1500))), "fruit6.png")
+                    0, 1000)+random.randrange(0, 1000))/2), -(random.randrange(100, 1500))), "src/fruit6.png")
                 fruit6.draw(win)
                 draw = True
             if freq1 == 6 and (fruit7.getAnchor()).getY() > 555:
                 fruit7.undraw()
                 fruit7 = Image(Point(((random.randrange(
-                    0, 1000)+random.randrange(0, 1000))/2), -(random.randrange(50, 900))), "fruit7.png")
+                    0, 1000)+random.randrange(0, 1000))/2), -(random.randrange(50, 900))), "src/fruit7.png")
                 fruit7.draw(win)
                 draw = True
             if freq1 == 7 and (fruit8.getAnchor()).getY() > 555:
                 fruit8.undraw()
                 fruit8 = Image(Point(((random.randrange(
-                    0, 1000)+random.randrange(0, 1000))/2), -(random.randrange(100, 1500))), "fruit8.png")
+                    0, 1000)+random.randrange(0, 1000))/2), -(random.randrange(100, 1500))), "src/fruit8.png")
                 fruit8.draw(win)
                 draw = True
             if freq1 == 8 and (fruit9.getAnchor()).getY() > 555:
                 fruit9.undraw()
                 fruit9 = Image(Point(((random.randrange(
-                    0, 1000)+random.randrange(0, 1000))/2), -(random.randrange(100, 500))), "fruit9.png")
+                    0, 1000)+random.randrange(0, 1000))/2), -(random.randrange(100, 500))), "src/fruit9.png")
                 fruit9.draw(win)
                 draw = True
             if freq1 == 9 and (fruit10.getAnchor()).getY() > 555:
                 fruit10.undraw()
                 fruit10 = Image(Point(((random.randrange(
-                    0, 1000)+random.randrange(0, 1000))/2), -(random.randrange(500, 1000))), "fruit10.png")
+                    0, 1000)+random.randrange(0, 1000))/2), -(random.randrange(500, 1000))), "src/fruit10.png")
                 fruit10.draw(win)
                 draw = True
             if freq1 == 10 and (fruit11.getAnchor()).getY() > 555:
                 fruit11.undraw()
                 fruit11 = Image(Point(((random.randrange(
-                    0, 1000)+random.randrange(0, 1000))/2), -(random.randrange(2000, 5000))), "fruit11.png")
+                    0, 1000)+random.randrange(0, 1000))/2), -(random.randrange(2000, 5000))), "src/fruit11.png")
                 fruit11.draw(win)
                 draw = True
             if freq1 == 11:
@@ -225,15 +225,15 @@ def interact(win, score_data, sef, sem):
                 print("=CONTACT +1SCORE")
                 fruit1.undraw()
                 fruit1 = Image(
-                    Point((random.randrange(0, 1000)), -50), "fruit1.png")
+                    Point((random.randrange(0, 1000)), -50), "src/fruit1.png")
                 fruit1.draw(win)
                 if pos == False:
                     objc1.undraw()
-                    objc1 = Image(objc1_pxy, "char1-3.png")
+                    objc1 = Image(objc1_pxy, "src/char1-3.png")
                     objc1.draw(win)
                 if pos == True:
                     objc1.undraw()
-                    objc1 = Image(objc1_pxy, "char1-4.png")
+                    objc1 = Image(objc1_pxy, "src/char1-4.png")
                     objc1.draw(win)
                 score = score+1
                 speedfl = speedfl+1
@@ -244,7 +244,7 @@ def interact(win, score_data, sef, sem):
                 print("=DROP")
                 fruit1.undraw()
                 fruit1 = Image(
-                    Point((random.randrange(0, 1000)), -50), "fruit1.png")
+                    Point((random.randrange(0, 1000)), -50), "src/fruit1.png")
                 fruit1.draw(win)
                 if sef != "SF":
                     wave_object7.play()
@@ -259,15 +259,15 @@ def interact(win, score_data, sef, sem):
                 print("=CONTACT +2SCORE")
                 fruit2.undraw()
                 fruit2 = Image(
-                    Point((random.randrange(0, 1000)), -400), "fruit2.png")
+                    Point((random.randrange(0, 1000)), -400), "src/fruit2.png")
                 fruit2.draw(win)
                 if pos == False and perm1 == True:
                     objc1.undraw()
-                    objc1 = Image(objc1_pxy, "char1-3.png")
+                    objc1 = Image(objc1_pxy, "src/char1-3.png")
                     objc1.draw(win)
                 if pos == True and perm1 == True:
                     objc1.undraw()
-                    objc1 = Image(objc1_pxy, "char1-4.png")
+                    objc1 = Image(objc1_pxy, "src/char1-4.png")
                     objc1.draw(win)
                     perm2 = True
                 if sef != "SF":
@@ -278,7 +278,7 @@ def interact(win, score_data, sef, sem):
                 print("=DROP")
                 fruit2.undraw()
                 fruit2 = Image(
-                    Point((random.randrange(0, 1000)), -400), "fruit2.png")
+                    Point((random.randrange(0, 1000)), -400), "src/fruit2.png")
                 fruit2.draw(win)
                 perm2 = True
                 if sef != "SF":
@@ -293,15 +293,15 @@ def interact(win, score_data, sef, sem):
                 print("=CONTACT +1SCORE")
                 fruit3.undraw()
                 fruit3 = Image(
-                    Point((random.randrange(0, 1000)), -100), "fruit3.png")
+                    Point((random.randrange(0, 1000)), -100), "src/fruit3.png")
                 fruit3.draw(win)
                 if pos == False and perm2 == True:
                     objc1.undraw()
-                    objc1 = Image(objc1_pxy, "char1-3.png")
+                    objc1 = Image(objc1_pxy, "src/char1-3.png")
                     objc1.draw(win)
                 if pos == True and perm2 == True:
                     objc1.undraw()
-                    objc1 = Image(objc1_pxy, "char1-4.png")
+                    objc1 = Image(objc1_pxy, "src/char1-4.png")
                     objc1.draw(win)
                 perm3 = True
                 if sef != "SF":
@@ -312,7 +312,7 @@ def interact(win, score_data, sef, sem):
                 print("=DROP -1HP")
                 fruit3.undraw()
                 fruit3 = Image(
-                    Point((random.randrange(0, 1000)), -100), "fruit3.png")
+                    Point((random.randrange(0, 1000)), -100), "src/fruit3.png")
                 fruit3.draw(win)
                 perm3 = True
                 if sef != "SF":
@@ -328,15 +328,15 @@ def interact(win, score_data, sef, sem):
                 print("=CONTACT +1HP OR +10SCORE")
                 fruit4.undraw()
                 fruit4 = Image(
-                    Point((random.randrange(0, 1000)), -3000), "fruit4.png")
+                    Point((random.randrange(0, 1000)), -3000), "src/fruit4.png")
                 fruit4.draw(win)
                 if pos == False and perm3 == True:
                     objc1.undraw()
-                    objc1 = Image(objc1_pxy, "char1-3.png")
+                    objc1 = Image(objc1_pxy, "src/char1-3.png")
                     objc1.draw(win)
                 if pos == True and perm3 == True:
                     objc1.undraw()
-                    objc1 = Image(objc1_pxy, "char1-4.png")
+                    objc1 = Image(objc1_pxy, "src/char1-4.png")
                     objc1.draw(win)
                 if up < 4:
                     up = up+1
@@ -350,7 +350,7 @@ def interact(win, score_data, sef, sem):
                 print("=DROP")
                 fruit4.undraw()
                 fruit4 = Image(
-                    Point((random.randrange(0, 1000)), -3000), "fruit4.png")
+                    Point((random.randrange(0, 1000)), -3000), "src/fruit4.png")
                 fruit4.draw(win)
             #--------------------------------------------------------------- Bomba
             if fruit5.getAnchor().getY() < 555 and perm4 == True:
@@ -361,15 +361,15 @@ def interact(win, score_data, sef, sem):
                 print("=CONTACT -1HP")
                 fruit5.undraw()
                 fruit5 = Image(
-                    Point((random.randrange(0, 1000)), -500), "fruit5.png")
+                    Point((random.randrange(0, 1000)), -500), "src/fruit5.png")
                 fruit5.draw(win)
                 if pos == False and perm4 == True:
                     objc1.undraw()
-                    objc1 = Image(objc1_pxy, "char1-3.png")
+                    objc1 = Image(objc1_pxy, "src/char1-3.png")
                     objc1.draw(win)
                 if pos == True and perm4 == True:
                     objc1.undraw()
-                    objc1 = Image(objc1_pxy, "char1-4.png")
+                    objc1 = Image(objc1_pxy, "src/char1-4.png")
                     objc1.draw(win)
                 up = up-1
                 if sef != "SF":
@@ -379,7 +379,7 @@ def interact(win, score_data, sef, sem):
                 print("=DROP")
                 fruit5.undraw()
                 fruit5 = Image(
-                    Point((random.randrange(0, 1000)), -500), "fruit5.png")
+                    Point((random.randrange(0, 1000)), -500), "src/fruit5.png")
                 fruit5.draw(win)
                 perm5 = True
         # ---------------------------------------------------------------Coelho
@@ -391,15 +391,15 @@ def interact(win, score_data, sef, sem):
                 print("=CONTACT +5SPEED")
                 fruit6.undraw()
                 fruit6 = Image(
-                    Point((random.randrange(0, 1000)), -500), "fruit6.png")
+                    Point((random.randrange(0, 1000)), -500), "src/fruit6.png")
                 fruit6.draw(win)
                 if pos == False and perm4 == True:
                     objc1.undraw()
-                    objc1 = Image(objc1_pxy, "char1-3.png")
+                    objc1 = Image(objc1_pxy, "src/char1-3.png")
                     objc1.draw(win)
                 if pos == True and perm4 == True:
                     objc1.undraw()
-                    objc1 = Image(objc1_pxy, "char1-4.png")
+                    objc1 = Image(objc1_pxy, "src/char1-4.png")
                     objc1.draw(win)
                 speedfl = speedfl+5
                 if sef != "SF":
@@ -408,7 +408,7 @@ def interact(win, score_data, sef, sem):
                 print("=DROP")
                 fruit6.undraw()
                 fruit6 = Image(
-                    Point((random.randrange(0, 1000)), -500), "fruit6.png")
+                    Point((random.randrange(0, 1000)), -500), "src/fruit6.png")
                 fruit6.draw(win)
         # ---------------------------------------------------------------Lesma
             if fruit7.getAnchor().getY() < 555 and perm5 == True:
@@ -419,15 +419,15 @@ def interact(win, score_data, sef, sem):
                 print("=CONTACT -5SPEED")
                 fruit7.undraw()
                 fruit7 = Image(
-                    Point((random.randrange(0, 1000)), -500), "fruit7.png")
+                    Point((random.randrange(0, 1000)), -500), "src/fruit7.png")
                 fruit7.draw(win)
                 if pos == False and perm4 == True:
                     objc1.undraw()
-                    objc1 = Image(objc1_pxy, "char1-3.png")
+                    objc1 = Image(objc1_pxy, "src/char1-3.png")
                     objc1.draw(win)
                 if pos == True and perm4 == True:
                     objc1.undraw()
-                    objc1 = Image(objc1_pxy, "char1-4.png")
+                    objc1 = Image(objc1_pxy, "src/char1-4.png")
                     objc1.draw(win)
                 speedfl = speedfl-5
                 if sef != "SF":
@@ -436,7 +436,7 @@ def interact(win, score_data, sef, sem):
                 print("=DROP")
                 fruit7.undraw()
                 fruit7 = Image(
-                    Point((random.randrange(0, 1000)), -500), "fruit7.png")
+                    Point((random.randrange(0, 1000)), -500), "src/fruit7.png")
                 fruit7.draw(win)
         # ---------------------------------------------------------------Limpa
             if fruit8.getAnchor().getY() < 555 and perm5 == True:
@@ -447,15 +447,15 @@ def interact(win, score_data, sef, sem):
                 print("=CONTACT CLEAN DISPLAY")
                 fruit8.undraw()
                 fruit8 = Image(
-                    Point((random.randrange(0, 1000)), -500), "fruit8.png")
+                    Point((random.randrange(0, 1000)), -500), "src/fruit8.png")
                 fruit8.draw(win)
                 if pos == False and perm4 == True:
                     objc1.undraw()
-                    objc1 = Image(objc1_pxy, "char1-3.png")
+                    objc1 = Image(objc1_pxy, "src/char1-3.png")
                     objc1.draw(win)
                 if pos == True and perm4 == True:
                     objc1.undraw()
-                    objc1 = Image(objc1_pxy, "char1-4.png")
+                    objc1 = Image(objc1_pxy, "src/char1-4.png")
                     objc1.draw(win)
                 if sef != "SF":
                     wave_object11.play()
@@ -470,17 +470,17 @@ def interact(win, score_data, sef, sem):
                 fruit9.undraw()
                 fruit10.undraw()
                 fruit11.undraw()
-                fruit1 = Image(Point(0, 701), "fruit1.png")
-                fruit2 = Image(Point(0, 701), "fruit2.png")
-                fruit3 = Image(Point(0, 701), "fruit3.png")
-                fruit4 = Image(Point(0, 701), "fruit4.png")
-                fruit5 = Image(Point(0, 701), "fruit5.png")
-                fruit6 = Image(Point(0, 701), "fruit6.png")
-                fruit7 = Image(Point(0, 701), "fruit7.png")
-                fruit8 = Image(Point(0, 701), "fruit8.png")
-                fruit9 = Image(Point(0, 701), "fruit9.png")
-                fruit10 = Image(Point(0, 701), "fruit10.png")
-                fruit11 = Image(Point(0, 701), "fruit11.png")
+                fruit1 = Image(Point(0, 701), "src/fruit1.png")
+                fruit2 = Image(Point(0, 701), "src/fruit2.png")
+                fruit3 = Image(Point(0, 701), "src/fruit3.png")
+                fruit4 = Image(Point(0, 701), "src/fruit4.png")
+                fruit5 = Image(Point(0, 701), "src/fruit5.png")
+                fruit6 = Image(Point(0, 701), "src/fruit6.png")
+                fruit7 = Image(Point(0, 701), "src/fruit7.png")
+                fruit8 = Image(Point(0, 701), "src/fruit8.png")
+                fruit9 = Image(Point(0, 701), "src/fruit9.png")
+                fruit10 = Image(Point(0, 701), "src/fruit10.png")
+                fruit11 = Image(Point(0, 701), "src/fruit11.png")
                 fruit1.draw(win)
                 fruit2.draw(win)
                 fruit3.draw(win)
@@ -496,7 +496,7 @@ def interact(win, score_data, sef, sem):
                 print("=DROP")
                 fruit8.undraw()
                 fruit8 = Image(
-                    Point((random.randrange(0, 1000)), -500), "fruit8.png")
+                    Point((random.randrange(0, 1000)), -500), "src/fruit8.png")
                 fruit8.draw(win)
         # ---------------------------------------------------------------Kiwi
             if fruit9.getAnchor().getY() < 555 and perm5 == True:
@@ -507,15 +507,15 @@ def interact(win, score_data, sef, sem):
                 print("=CONTACT +4SCORE")
                 fruit9.undraw()
                 fruit9 = Image(
-                    Point((random.randrange(0, 1000)), -500), "fruit10.png")
+                    Point((random.randrange(0, 1000)), -500), "src/fruit10.png")
                 fruit9.draw(win)
                 if pos == False and perm4 == True:
                     objc1.undraw()
-                    objc1 = Image(objc1_pxy, "char1-3.png")
+                    objc1 = Image(objc1_pxy, "src/char1-3.png")
                     objc1.draw(win)
                 if pos == True and perm4 == True:
                     objc1.undraw()
-                    objc1 = Image(objc1_pxy, "char1-4.png")
+                    objc1 = Image(objc1_pxy, "src/char1-4.png")
                     objc1.draw(win)
                 if sef != "SF":
                     wave_object5.play()
@@ -527,7 +527,7 @@ def interact(win, score_data, sef, sem):
                 up = up-1
                 fruit9.undraw()
                 fruit9 = Image(
-                    Point((random.randrange(0, 1000)), -500), "fruit9.png")
+                    Point((random.randrange(0, 1000)), -500), "src/fruit9.png")
                 fruit9.draw(win)
                 perm6 = True
         # ---------------------------------------------------------------Melancia
@@ -539,15 +539,15 @@ def interact(win, score_data, sef, sem):
                 print("=CONTACT +3SCORE")
                 fruit10.undraw()
                 fruit10 = Image(
-                    Point((random.randrange(0, 1000)), -500), "fruit10.png")
+                    Point((random.randrange(0, 1000)), -500), "src/fruit10.png")
                 fruit10.draw(win)
                 if pos == False and perm4 == True:
                     objc1.undraw()
-                    objc1 = Image(objc1_pxy, "char1-3.png")
+                    objc1 = Image(objc1_pxy, "src/char1-3.png")
                     objc1.draw(win)
                 if pos == True and perm4 == True:
                     objc1.undraw()
-                    objc1 = Image(objc1_pxy, "char1-4.png")
+                    objc1 = Image(objc1_pxy, "src/char1-4.png")
                     objc1.draw(win)
                 score = score+3
                 speedfl = speedfl+1
@@ -558,7 +558,7 @@ def interact(win, score_data, sef, sem):
                 up = up-1
                 fruit10.undraw()
                 fruit10 = Image(
-                    Point((random.randrange(0, 1000)), -500), "fruit10.png")
+                    Point((random.randrange(0, 1000)), -500), "src/fruit10.png")
                 fruit10.draw(win)
         # ---------------------------------------------------------------Mamão
             if fruit11.getAnchor().getY() < 555 and perm6 == True:
@@ -569,15 +569,15 @@ def interact(win, score_data, sef, sem):
                 print("=CCONTACT +10SCORE")
                 fruit11.undraw()
                 fruit11 = Image(
-                    Point((random.randrange(0, 1000)), -500), "fruit11.png")
+                    Point((random.randrange(0, 1000)), -500), "src/fruit11.png")
                 fruit11.draw(win)
                 if pos == False and perm4 == True:
                     objc1.undraw()
-                    objc1 = Image(objc1_pxy, "char1-3.png")
+                    objc1 = Image(objc1_pxy, "src/char1-3.png")
                     objc1.draw(win)
                 if pos == True and perm4 == True:
                     objc1.undraw()
-                    objc1 = Image(objc1_pxy, "char1-4.png")
+                    objc1 = Image(objc1_pxy, "src/char1-4.png")
                     objc1.draw(win)
                 score = score+10
                 speedfl = speedfl+1
@@ -588,7 +588,7 @@ def interact(win, score_data, sef, sem):
                 up = up-1
                 fruit11.undraw()
                 fruit11 = Image(
-                    Point((random.randrange(0, 1000)), -500), "fruit11.png")
+                    Point((random.randrange(0, 1000)), -500), "src/fruit11.png")
                 fruit11.draw(win)
         except:
             pass
@@ -659,7 +659,7 @@ def interact(win, score_data, sef, sem):
             gat2 = False
         if (key == ("a" or "A")) and gat == False:
             objc1.undraw()
-            objc1 = Image(objc1_pxy, "char1-2.png")
+            objc1 = Image(objc1_pxy, "src/char1-2.png")
             objc1.draw(win)
             if sef != "SF":
                 wave_object.play()
@@ -668,7 +668,7 @@ def interact(win, score_data, sef, sem):
             pos = False
         if (key == ("d" or "D")) and gat2 == False:
             objc1.undraw()
-            objc1 = Image(objc1_pxy, "char1-1-0.png")
+            objc1 = Image(objc1_pxy, "src/char1-1-0.png")
             objc1.draw(win)
             if sef != "SF":
                 wave_object.play()
@@ -744,7 +744,7 @@ def interact(win, score_data, sef, sem):
                 objc1_pxy.getX(), objc1_pxy.getY(), speedy, speedx, gravit_s, jump_border_line, up, score)
             objc1.undraw()
             objc1_pxy = Point(objpx, objpy)
-            objc1 = Image(objc1_pxy, "char1-2.png")
+            objc1 = Image(objc1_pxy, "src/char1-2.png")
             objc1.draw(win)
             gamepause.undraw()
         update(120)
@@ -759,9 +759,9 @@ def retorno(sef, sem, reset):
 
 def inicial(sef, sem, reset):
     print("=MAIN MENU OPEN")
-    wave_object8 = sa.WaveObject.from_wave_file('audio8.wav')
+    wave_object8 = sa.WaveObject.from_wave_file('src/audio8.wav')
     inicial = GraphWin(title="Inicio", width=1000, height=600, autoflush=True)
-    background = Image(Point(500, 300), "bitmap5.png")
+    background = Image(Point(500, 300), "src/bitmap5.png")
     background.draw(inicial)
     text1 = Text(Point(640, 270), "")
     text2 = Text(Point(640, 370), "")
@@ -769,7 +769,7 @@ def inicial(sef, sem, reset):
     text2.setSize(36)
     text1.setTextColor("white")
     text2.setTextColor("white")
-    contexdpl = Image(Point(500, 300), "bitmap6.png")
+    contexdpl = Image(Point(500, 300), "src/bitmap6.png")
     key = None
     while key != "4":
         key = inicial.getKey()
